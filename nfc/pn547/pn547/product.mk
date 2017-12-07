@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x
 
 PRODUCT_COPY_FILES += \
-    device/samsung/s3ve3g/nfc/pn547/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/samsung/s3ve3g/nfc/pn547/libnfc-nci.conf:system/etc/libnfc-nci.conf \
     device/samsung/s3ve3g/nfc/pn547/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
 
 PRODUCT_PROPERTY_OVERRIDES += \
