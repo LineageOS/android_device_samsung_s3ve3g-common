@@ -53,6 +53,16 @@ ro.hdmi.enable=true
 # HWUI
 debug.hwui.use_buffer_age=false
 
+# LMKd
+ro.lmk.critical_upgrade=false
+ro.lmk.critical=0
+ro.lmk.downgrade_pressure=100
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.low=1001
+ro.lmk.medium=0
+ro.lmk.upgrade_pressure=100
+
 # Media
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
