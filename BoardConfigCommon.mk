@@ -37,9 +37,6 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 # Build
 BLOCK_BASED_OTA := true
 
-# Camera
-USE_DEVICE_SPECIFIC_CAMERA := true
-
 # Extended Filesystem Support
 TARGET_EXFAT_DRIVER := sdfat
 
