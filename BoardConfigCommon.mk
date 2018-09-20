@@ -61,6 +61,9 @@ TARGET_KERNEL_SOURCE := kernel/samsung/msm8226
 
 # Legacy BLOB Support
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+    /system/bin/mediaserver=22 \
+    /system/vendor/bin/mm-qcamera-daemon=22
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
