@@ -30,6 +30,7 @@ ro.hdcp2.rx=tz
 ro.qualcomm.cabl=1
 ro.secwvk=144
 ro.sf.lcd_density=320
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 sys.use_fifo_ui=1
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
