@@ -75,7 +75,6 @@ ro.hwui.text_large_cache_height=1024
 # Media
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
-persist.media.treble_omx=false
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
