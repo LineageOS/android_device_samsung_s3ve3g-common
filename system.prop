@@ -14,7 +14,7 @@ audio.offload.pcm.24bit.enable=true
 audio.offload.multiple.enabled=false
 
 # Bluetooth
-ro.bluetooth.hfp.ver=1.6
+ro.bluetooth.hfp.ver=1.7
 qcom.bluetooth.soc=smd
 qcom.bt.le_dev_pwr_class=1
 ro.qualcomm.bluetooth.opp=true
@@ -26,7 +26,6 @@ ro.qualcomm.bluetooth.nap=true
 ro.qualcomm.bluetooth.map=true
 ro.bluetooth.sap=true
 ro.bluetooth.dun=true
-ro.bluetooth.hfp.ver=1.6
 ro.qualcomm.bt.hci_transport=smd
 
 # Camera
