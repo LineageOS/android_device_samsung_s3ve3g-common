@@ -1,12 +1,10 @@
 # Audio
 af.fast_track_multiplier=1
-af.resampler.quality=4
 audio_hal.period_size=192
 audio.offload.video=true
 persist.audio.fluence.speaker=true
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
-ro.qc.sdk.audio.ssr=false
 ro.qc.sdk.audio.fluencetype=fluence
 use.voice.path.for.pcm.voip=false
 use.dedicated.device.for.voip=true
@@ -14,7 +12,6 @@ audio.deep_buffer.media=true
 audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
 audio.offload.multiple.enabled=false
-tunnel.audio.encode = true
 
 # Bluetooth
 ro.bluetooth.hfp.ver=1.6
