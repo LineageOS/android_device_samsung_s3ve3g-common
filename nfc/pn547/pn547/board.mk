@@ -19,4 +19,3 @@ include device/samsung/s3ve3g/nfc/board.mk
 
 # PN547 specific flags
 BOARD_NFC_CHIPSET := pn547
-BOARD_NFC_DEVICE := "/dev/pn547"
