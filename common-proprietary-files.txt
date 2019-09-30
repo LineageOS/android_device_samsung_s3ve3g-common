@@ -62,6 +62,9 @@ vendor/lib/libQSEEComAPI.so|73a760768f621ea48a8e3bb83e0cbbce5937cdf5
 vendor/lib/librpmb.so|32b75d07607193bcc81fe871d98ceb720fd210e4
 vendor/lib/libssd.so|f7216c09cd17a94fb946179503cd286262be9de8
 
+# FM Radio - From lineage-14.1-20180822-s3ve3g
+system/lib/libfmjni.so|5853a32bc9af140f469c2ce647c0db704b8e4482
+
 # IPC router security - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
 bin/irsc_util:vendor/bin/irsc_util|286b8129b6b82fb19badcbb5f796013a5e9376a1
 etc/sec_config

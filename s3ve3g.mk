@@ -51,8 +51,7 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+    FMRadio
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
