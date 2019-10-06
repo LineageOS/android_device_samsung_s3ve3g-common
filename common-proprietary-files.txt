@@ -39,8 +39,6 @@ bin/hci_qcomm_init:vendor/bin/hci_qcomm_init|e78812bdcf2ea3ac4352d3e5ffaae8a9223
 vendor/lib/libbtnv.so|2061b485bc848df502cf6d009e6d59781ef49768
 
 # Camera firmware
-etc/B08QT_imx175_module_info.xml
-etc/E08QL_s5k4h5yb_module_info.xml
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
