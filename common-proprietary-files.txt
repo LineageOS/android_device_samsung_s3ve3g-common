@@ -19,7 +19,7 @@ vendor/lib/soundfx/libqcbassboost.so|0d47c9255f0fb0865ed7b14d83cddd79ad3bde0c
 vendor/lib/soundfx/libqcvirt.so|9643ef67b86700b78ea26f54e29808ea814bde40
 vendor/lib/soundfx/libqcreverb.so|1819566d8c69bb8f562cf4b0422db67f9c8393af
 
-# ADSP - Pinned to Samsung Galaxy S5 Mini G800HXXU1CQC1_G800HXEO1CQB1
+# ADSP - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
 bin/adsprpcd:vendor/bin/adsprpcd|794cbef158698b05016cd911055d2e35b8156616
 vendor/lib/libadsprpc.so|cf424f4aa995b892583527e9acc4d1264c0d955e
 vendor/lib/libfastcvadsp_stub.so|95d7d1121e52bd576c301cba01e79af67d7b79f1
@@ -33,10 +33,74 @@ vendor/lib/rfsa/adsp/libfastcvadsp.so|a1fad41c2f283b49ae85986c013ee1179ad80e91
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|9eb9499087e8cbd87aef57b25eb306a3ea481524
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|9eb9499087e8cbd87aef57b25eb306a3ea481524
 
-# Bluetooth - Pinned to Samsung Galaxy S5 Mini G800HXXU1CQC1_G800HXEO1CQB1
+# Bluetooth - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
 bin/btnvtool:vendor/bin/btnvtool|3b518f5626d211930c0d63e4b2680797c6c7a4d5
 bin/hci_qcomm_init:vendor/bin/hci_qcomm_init|e78812bdcf2ea3ac4352d3e5ffaae8a9223fdf0f
 vendor/lib/libbtnv.so|2061b485bc848df502cf6d009e6d59781ef49768
+
+# Camera
+lib/libarcsoft_flawlessface.so:vendor/lib/libarcsoft_flawlessface.so
+lib/libarcsoft_night_shot.so:vendor/lib/libarcsoft_night_shot.so
+lib/libarcsoft_panorama_burstcapture.so:vendor/lib/libarcsoft_panorama_burstcapture.so
+lib/libarcsoft_picaction.so:vendor/lib/libarcsoft_picaction.so
+lib/libarcsoft_sensorndk.so:vendor/lib/libarcsoft_sensorndk.so
+lib/libarcsoft_skin_soften.so:vendor/lib/libarcsoft_skin_soften.so
+lib/libmmcamera_wavelet_lib.so:vendor/lib/libmmcamera_wavelet_lib.so
+vendor/lib/libactuator_ak7345_camcorder.so
+vendor/lib/libactuator_ak7345_camera.so
+vendor/lib/libactuator_dw9804_camcorder.so
+vendor/lib/libactuator_dw9804_camera.so
+vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_image_stab.so
+vendor/lib/libmmcamera_imglib.so
+vendor/lib/libmmcamera_s5k6a3yx.so
+vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmipl.so
+vendor/lib/libqomx_jpegdec.so
+vendor/lib/libqomx_jpegenc.so
+
+# Camera - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|08512011bb846408e021e9516554e69c8d7372c7
+vendor/lib/libjpegdhw.so|44db5419047fbbebb345fdc7b1bd152fcc772dcf
+vendor/lib/libjpegehw.so|442b8ad502c44d69ff781f047104df20b4c1b67e
+vendor/lib/libmm-color-convertor.so|70e0a0e5e40c75cb9eccf88a85f42721968b8f00
+vendor/lib/libmmcamera2_c2d_module.so|30714e50e55bb00ec67d3efbf4e964d781628a99
+vendor/lib/libmmcamera2_vpe_module.so|e47c68253e61a053734ed0d8974d6a617f83830e
+vendor/lib/libmmcamera2_wnr_module.so|ee2a776f58d144a0756d6787ebce35c7e694c7c6
+lib/libmmcamera_cac.so:vendor/lib/libmmcamera_cac.so|05acdf927036e734b741baf258f3b9d2187a4475
+lib/libmmcamera_cac2_lib.so:vendor/lib/libmmcamera_cac2_lib.so|9a3a82a3ad38f58315125159aa24fd55b64a42d0
+vendor/lib/libmmcamera_hdr_gb_lib.so|05e76a4d464d5dbc74fbd55ffbe6879feb244045
+vendor/lib/libmmcamera_interface.so|2aed89c5bfe99d98c0357c0a10b1b397dc6f5053
+vendor/lib/libmmjpeg.so|a9eba95cb694bdf416cb562685cda2a44fd70f36
+vendor/lib/libmmjpeg_interface.so|20b3ae264db08802a6eba7e5fffb039004321bb0
+vendor/lib/libmmqjpeg_codec.so|d77913045f9342e27c803533b19078578dc76cb0
+vendor/lib/libqomx_core.so|586a1a199c012c5ee58096bcb786251041a5adb3
+vendor/lib/libHevcSwDecoder.so|ed6237ce5b3550a6ab677c0fdf76d9ea57e51221
+vendor/lib/libOmxMux.so|5241c2f63bd999602665b54b181c03950a2cc3f6
+
+# Camera - Pinned to Samsun Galaxy Grand 2
+lib/hw/camera.msm8226.so:vendor/lib/camera.vendor.msm8226.so|23ed6e7347d1ee322364fceb6aa8a09ea515c90a
+
+# Front Camera - Pinned to Samsun Galaxy Grand 2
+vendor/lib/libmmcamera_s5k6a3yx.so|ff734c7de4acbb89dd70218c312a0eb93d57be54
+
+# Camera Chromatix
+lib/libAfSingle.so:vendor/lib/libAfSingle.so
+lib/libTsAe.so:vendor/lib/libTsAe.so
+lib/libTsAf.so:vendor/lib/libTsAf.so
+lib/libTs_J_Accm.so:vendor/lib/libTs_J_Accm.so
+
+# Front Camera Chromatix - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
+lib/libchromatix_s5k6a3yx_smart_stay.so:vendor/lib/libchromatix_s5k6a3yx_smart_stay.so|ab927da7f7634a8bd2e550dc857b041ea08b451e
+lib/libchromatix_s5k6a3yx_vt.so:vendor/lib/libchromatix_s5k6a3yx_vt.so|001371a4cb5f9eb86f207a93ebcc6b1c76b085ea
+lib/libchromatix_s5k6a3yx_vt_hd.so:vendor/lib/libchromatix_s5k6a3yx_vt_hd.so|d1841bbc5a221f65d8d3263371b8b696c31d9f33
+vendor/lib/libchromatix_s5k6a3yx_common.so|5d76b369f25f3dd41796687e97ecde572a2dbd5b
+vendor/lib/libchromatix_s5k6a3yx_default_video.so|4dca0ec84ab7b1ef07af40f86cadfb6d92450125
+vendor/lib/libchromatix_s5k6a3yx_preview.so|fa3c6174f2351568f61256dd45d29ba43085d74d
+vendor/lib/libchromatix_s5k6a3yx_snapshot.so|e69c9bfef3fc042cc12954ec77b6544ff8544e38
+vendor/lib/libchromatix_s5k6a3yx_video_hd.so|1458657bc9414a2a0c613d50f9278ce430a6440e
+vendor/lib/libchromatix_s5k6a3yx_zsl.so|37e10556d024e4f4fc0f6e8ecee47c84fd7f49d7
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
@@ -63,10 +127,6 @@ vendor/lib/libssd.so|f7216c09cd17a94fb946179503cd286262be9de8
 # FM Radio - From lineage-14.1-20180822-s3ve3g
 system/lib/libfmjni.so|5853a32bc9af140f469c2ce647c0db704b8e4482
 
-## GSM Blobs - Pinned to G900FXXS1BPCL_G900FOXA1BOJ1_BTU versions
-# Radio
-lib/libsec-ril.so:vendor/lib/libsecril.so|075570a628f465f92f3067afcefb6938d4e5dc3a
-
 # IPC router security - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
 bin/irsc_util:vendor/bin/irsc_util|286b8129b6b82fb19badcbb5f796013a5e9376a1
 etc/sec_config
@@ -74,14 +134,14 @@ etc/sec_config
 # IPv6 Tethering - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
 bin/radish:vendor/bin/radish|5c54cb3d5c3472b6bb8f535817eeb55852b34ef0
 
-# Media - Pinned to Samsung Galaxy S5 Mini G800HXXU1CQC1_G800HXEO1CQB1
+# Media - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
 vendor/lib/libOmxAacDec.so|9d3a2a498fa740be2a32c336a2dc1a911decd50b
 vendor/lib/libOmxAmrwbplusDec.so|54ebb32cf1f71ca1fe8824176c8c4154a9ee120f
 vendor/lib/libOmxEvrcDec.so|3c31f3d7b420db0076dfb35eb4cbc3efa5160ab0
 vendor/lib/libOmxQcelp13Dec.so|05392036cf8981a260b91991c306407b02afdcb1
 vendor/lib/libOmxWmaDec.so|1b96f549a54660218c1459cf7133d2a5632ca657
 
-# Perf - Pinned to Samsung Galaxy S5 Mini G800HXXU1CQC1_G800HXEO1CQB1
+# Perf - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
 vendor/lib/libqc-opt.so|86b2577d54bafa497601ff6b6c4159b210e55fae
 vendor/lib/libqti-perfd-client.so|909e0a3d1b7a86030f58b165d5f761fc50183ff0
 
@@ -112,9 +172,10 @@ bin/qmuxd:vendor/bin/qmuxd|e257d63996812e2eb23810bda59913f558ee03d2
 bin/rfs_access:vendor/bin/rfs_access|49a8516ed01b609a9e5079d8135b75db5b024236
 bin/rmt_storage:vendor/bin/rmt_storage|000ddcabfc9416e9a27ba6d04860cc14b6803cdd
 vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5
+lib/libsec-ril.so:vendor/lib/libsecril.so|075570a628f465f92f3067afcefb6938d4e5dc3a
 
 # Sensors
-lib/hw/sensors.vendor.msm8226.so:vendor/lib/sensors.vendor.msm8226.so
+lib/hw/sensors.msm8226.so:vendor/lib/sensors.vendor.msm8226.so
 lib/libyasalgo.so:vendor/lib/libyasalgo.so
 
 # Time services - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
