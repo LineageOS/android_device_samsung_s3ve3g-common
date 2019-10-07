@@ -15,13 +15,16 @@
 #
 
 # NFC
-$(call inherit-product, device/samsung/klte-common/nfc/product.mk)
-
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
-    libpn547_fw \
-    nfc_nci.msm8974
+    com.android.nfc_extras \
+    NfcNci \
+    Tag
 
 PRODUCT_COPY_FILES += \
-    device/samsung/klte-common/nfc/pn547/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm.conf \
-    device/samsung/klte-common/nfc/pn547/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+    device/samsung/s3ve3g/nfc/nfcee_access.xml:system/etc/nfcee_access.xml
+
+# NFC Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml

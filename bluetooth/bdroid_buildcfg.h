@@ -1,3 +1,4 @@
+
 /*
  * Copyright (C) 2012 The Android Open Source Project
  * Copyright (C) 2012 The CyanogenMod Project <http://www.cyanogenmod.org>
@@ -18,11 +19,10 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S5"
-
+#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S III Neo"
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 
 #define BTM_WBS_INCLUDED TRUE       /* Enable WBS */
-#define BTIF_HF_WBS_PREFERRED TRUE  /* Use WBS    */
+#define BTIF_HF_WBS_PREFERRED TRUE /* Use WBS    */
 
 #endif

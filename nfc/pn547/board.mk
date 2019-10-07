@@ -15,8 +15,4 @@
 #
 
 # NFC
-include $(COMMON_PATH)/nfc/board.mk
-
-# PN547 specific flags
-BOARD_NFC_CHIPSET := pn547
-BOARD_NFC_HAL_SUFFIX := msm8974
+DEVICE_MANIFEST_FILE += device/samsung/s3ve3g/nfc/manifest.xml

@@ -55,4 +55,4 @@ void power_set_interactive_ext(int on) {
 
 void cm_power_set_interactive_ext(int on) {
     power_set_interactive_ext(on);
-}
+} 

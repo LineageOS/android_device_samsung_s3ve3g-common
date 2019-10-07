@@ -1,6 +1,3 @@
-# Art
-dalvik.vm.dex2oat-swap=false
-
 # Audio
 af.fast_track_multiplier=1
 audio_hal.period_size=192
@@ -17,15 +14,37 @@ audio.offload.pcm.24bit.enable=true
 audio.offload.multiple.enabled=false
 audio.offload.buffer.size.kb=32
 
+# Bluetooth
+ro.bluetooth.hfp.ver=1.6
+qcom.bluetooth.soc=smd
+qcom.bt.le_dev_pwr_class=1
+ro.qualcomm.bluetooth.opp=true
+ro.qualcomm.bluetooth.hfp=true
+ro.qualcomm.bluetooth.hsp=true
+ro.qualcomm.bluetooth.pbap=true
+ro.qualcomm.bluetooth.ftp=true
+ro.qualcomm.bluetooth.nap=true
+ro.qualcomm.bluetooth.map=true
+ro.bluetooth.sap=true
+ro.bluetooth.dun=true
+ro.bluetooth.hfp.ver=1.6
+ro.qualcomm.bt.hci_transport=smd
+
 # Camera
 camera2.portability.force_api=1
+
+# Debug
+ro.adb.secure=0
+ro.debuggable=1
+persist.service.adb.enable=1 
+persist.sys.usb.config=adb
 
 # Display
 ro.hdcp2.rx=tz
 ro.qualcomm.cabl=1
 ro.secwvk=144
-ro.sf.lcd_density=480
-debug.hwui.use_buffer_age=false
+ro.sf.lcd_density=320
+debug.composition.type=c2d
 
 # GPS
 persist.gps.qc_nlp_in_use=0
@@ -34,6 +53,8 @@ ro.qc.sdk.izat.premium_enabled=0
 ro.qc.sdk.izat.service_mask=0x0
 
 # Media
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
 persist.media.treble_omx=false
 
 # NFC
@@ -43,17 +64,24 @@ ro.nfc.port=I2C
 ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 
 # Radio
-persist.data.netmgrd.qos.enable=true
+persist.data.netmgrd.qos.enable=false
 persist.data.qmi.adb_logmask=0
 persist.radio.add_power_save=1
-rild.libpath=/system/vendor/lib/libsec-ril.so
+rild.libpath=/vendor/lib/libsec-ril.so
 ro.telephony.mms_data_profile=5
 ro.ril.telephony.qan_resp_strings=6
+ro.telephony.default_network=3
+persist.radio.apm_sim_not_pwdn=1
+ro.use_data_netmgrd=false
+ro.data.large_tcp_window_size=true
 
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
 ro.telephony.call_ring.multiple=0
 
 # Sensors
+ro.qc.sdk.gestures.camera=false
+ro.qc.sdk.camera.facialproc=false
+ro.qc.sdk.sensors.gestures=true
 debug.sensors=1
 
 # Tethering
@@ -63,4 +91,5 @@ net.tethering.noprovisioning=true
 ro.lineage.build.vendor_security_patch=2017-08-01
 
 # WiFi
+ro.disableWifiApFirmwareReload=true
 wifi.interface=wlan0
