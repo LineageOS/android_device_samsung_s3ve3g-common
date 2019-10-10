@@ -54,9 +54,6 @@ extract "$MY_DIR"/common-proprietary-files.txt "$SRC"
 
 COMMON_BLOB_ROOT="$CM_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary
 
-THERMAL_ENGINE="$COMMON_BLOB_ROOT"/vendor/bin/thermal-engine
-sed -i 's|/system/etc|/vendor/etc|g' "$THERMAL_ENGINE"
-
 # Reinitialize the helper for device
 setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
 
