@@ -22,39 +22,39 @@ export INITIAL_COPYRIGHT_YEAR=2014
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-CM_ROOT="$MY_DIR"/../../..
+LINEAGE_ROOT="${MY_DIR}/../../.."
 
-HELPER="$CM_ROOT"/vendor/lineage/build/tools/extract_utils.sh
-if [ ! -f "$HELPER" ]; then
-    echo "Unable to find helper script at $HELPER"
+HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
+if [ ! -f "${HELPER}" ]; then
+    echo "Unable to find helper script at ${HELPER}"
     exit 1
 fi
-. "$HELPER"
+. "${HELPER}"
 
 # Initialize the helper for common device
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true
 
 # Copyright headers and common guards
 write_headers "s3ve3gxx s3ve3gjv s3ve3gds"
 
-write_makefiles "$MY_DIR"/common-proprietary-files.txt
+write_makefiles "${MY_DIR}/common-proprietary-files.txt"
 
 write_footers
 
-if [ ! -z $VARIANT_COPYRIGHT_YEAR ]; then
-    export INITIAL_COPYRIGHT_YEAR=$VARIANT_COPYRIGHT_YEAR
+if [ ! -z "${VARIANT_COPYRIGHT_YEAR}" ]; then
+    export INITIAL_COPYRIGHT_YEAR="${VARIANT_COPYRIGHT_YEAR}"
 fi
 
 # Reinitialize the helper for device
-setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
+setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}"
 
 # Copyright headers and guards
 write_headers
 
-for BLOB_LIST in "$MY_DIR"/../$DEVICE/device-proprietary-files*.txt; do
-    write_makefiles $BLOB_LIST
+for BLOB_LIST in "${MY_DIR}/../${DEVICE}/device-proprietary-files*.txt"; do
+    write_makefiles ${BLOB_LIST}
 done
 
 write_footers
