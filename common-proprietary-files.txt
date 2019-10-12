@@ -3,6 +3,9 @@
 # Activity recognition
 vendor/lib/libsensor1.so
 
+# Audio
+lib/libcsd-client.so:vendor/lib/libcsd-client.so
+
 # Audio - Libs pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
 vendor/lib/libacdbloader.so|27ceba70917afc0e9b26877354c8404dae5af09c
 vendor/lib/libacdbrtac.so|f1a150ccd4bf0b5a2957532ec2690b52124d006d
@@ -80,7 +83,7 @@ vendor/lib/libHevcSwDecoder.so|ed6237ce5b3550a6ab677c0fdf76d9ea57e51221
 vendor/lib/libOmxMux.so|5241c2f63bd999602665b54b181c03950a2cc3f6
 
 # Camera - Pinned to Samsun Galaxy Grand 2
-lib/hw/camera.msm8226.so:vendor/lib/camera.vendor.msm8226.so|23ed6e7347d1ee322364fceb6aa8a09ea515c90a
+lib/hw/camera.msm8226.so:vendor/lib/hw/camera.vendor.msm8226.so|23ed6e7347d1ee322364fceb6aa8a09ea515c90a
 
 # Front Camera - Pinned to Samsun Galaxy Grand 2
 vendor/lib/libmmcamera_s5k6a3yx.so|ff734c7de4acbb89dd70218c312a0eb93d57be54
@@ -115,7 +118,7 @@ vendor/bin/thermal-engine|fb82c53fa2f9c7618a6540de61b4477ac54523a3
 vendor/lib/libthermalclient.so|e1f2136608a7104016f7f7261dddcfbb0c6aa870
 vendor/lib/libthermalioctl.so|9c7993e03f68bb17dd744c0369b9bfaff23a1e66
 
-# DRM - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+# DRM - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU where specified
 bin/qseecomd:vendor/bin/qseecomd|4a69e9799a988d5527e8802470a0a036cb0b120f
 vendor/lib/libdrmdiag.so|498085e4fc40eacee17bb9c78eaf2da060ecc58e
 vendor/lib/libdrmfs.so|6f50f22ae12695c2bb29f5c6c2c00029e78b0c12
@@ -124,12 +127,15 @@ vendor/lib/libQSEEComAPI.so|73a760768f621ea48a8e3bb83e0cbbce5937cdf5
 vendor/lib/librpmb.so|32b75d07607193bcc81fe871d98ceb720fd210e4
 vendor/lib/libssd.so|f7216c09cd17a94fb946179503cd286262be9de8
 
+# DRM - Pinned to S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
+lib/libdrmdecrypt.so:vendor/lib/libdrmdecrypt.so|a79248704d988a8e1930c3a79212e8588c07bfff
+
 # FM Radio - From lineage-14.1-20180822-s3ve3g
-system/lib/libfmjni.so|5853a32bc9af140f469c2ce647c0db704b8e4482
+lib/libfmjni.so|5853a32bc9af140f469c2ce647c0db704b8e4482
 
 # IPC router security - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
 bin/irsc_util:vendor/bin/irsc_util|286b8129b6b82fb19badcbb5f796013a5e9376a1
-etc/sec_config
+etc/sec_config:vendor/etc/sec_config
 
 # IPv6 Tethering - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
 bin/radish:vendor/bin/radish|5c54cb3d5c3472b6bb8f535817eeb55852b34ef0
@@ -140,6 +146,7 @@ vendor/lib/libOmxAmrwbplusDec.so|54ebb32cf1f71ca1fe8824176c8c4154a9ee120f
 vendor/lib/libOmxEvrcDec.so|3c31f3d7b420db0076dfb35eb4cbc3efa5160ab0
 vendor/lib/libOmxQcelp13Dec.so|05392036cf8981a260b91991c306407b02afdcb1
 vendor/lib/libOmxWmaDec.so|1b96f549a54660218c1459cf7133d2a5632ca657
+vendor/lib/libmmosal.so|20af45456f1f588cc97e5278b3d273c8070eab2a
 
 # Perf - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
 vendor/lib/libqc-opt.so|86b2577d54bafa497601ff6b6c4159b210e55fae
@@ -147,6 +154,10 @@ vendor/lib/libqti-perfd-client.so|909e0a3d1b7a86030f58b165d5f761fc50183ff0
 
 # Qualcomm - Pinned to Samsung Galaxy S5 G900FXXS1BPCL_G900FOXA1BOJ1_BTU
 vendor/lib/libxml.so|251560fdf50b82c15f481bfc6cf12235c42e19c9
+
+# Qualcomm Framework
+vendor/lib/libqmi_csvt_srvc.so
+vendor/lib/libqmi_client_helper.so
 
 # Qualcomm Framework - Pinned to Samsung Galaxy S5 G900FXXS1BPCL_G900FOXA1BOJ1_BTU
 lib/libmdmdetect.so:vendor/lib/libmdmdetect.so|9c19d5aacc094597c166529386f83ac721ac1979
@@ -167,14 +178,28 @@ vendor/lib/libqmi_csi.so|dee249a1f0fff082b5e5547cfab103ac10ab55e2
 vendor/lib/libqmi_encdec.so|82e39ae7e4bb8651d06fdae99fc38e3fb390b62d
 vendor/lib/libqmiservices.so|0b90d67d7ec0b0bc3de2b5ccc3afcda13bd5ffd8
 
-# Radio - Pinned to Samsung Galaxy S5 G900FXXS1BPCL_G900FOXA1BOJ1_BTU
+# Radio
+lib/libatparser.so:vendor/lib/libatparser.so
+lib/libcordon.so:vendor/lib/libcordon.so
+lib/libfactoryutil.so:vendor/lib/libfactoryutil.so
+lib/libomission_avoidance.so:vendor/lib/libomission_avoidance.so
+
+# Radio - Pinned to G900FXXS1BPCL_G900FOXA1BOJ1_BTU
+bin/efsks:vendor/bin/efsks|2c366ac7ab878068c77e5598c411a48cf47b056a
+bin/ks:vendor/bin/ks|949406ae5d1b74034b3828af1905a181e4b69961
+bin/qcks:vendor/bin/qcks|9026c84f32e1ee5121024c72b878c09dfde95e5b
 bin/qmuxd:vendor/bin/qmuxd|e257d63996812e2eb23810bda59913f558ee03d2
 bin/rfs_access:vendor/bin/rfs_access|49a8516ed01b609a9e5079d8135b75db5b024236
 bin/rmt_storage:vendor/bin/rmt_storage|000ddcabfc9416e9a27ba6d04860cc14b6803cdd
 vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5
 
+# Radio - Pinned to S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
+bin/ds_fmc_appd:vendor/bin/ds_fmc_appd|80eb4cd64d23a82a9a8c2aeafa9128d5e8158bdd
+vendor/lib/libdsnetutils.so|bf7097980412a364c941aefcadfbe89066fdecf1
+vendor/lib/libdsucsd.so|1f739bcb91330edb307329f851f031d56723672f
+
 # Sensors
-lib/hw/sensors.msm8226.so:vendor/lib/sensors.vendor.msm8226.so
+lib/hw/sensors.msm8226.so:vendor/lib/hw/sensors.vendor.msm8226.so
 lib/libyasalgo.so:vendor/lib/libyasalgo.so
 
 # Time services
