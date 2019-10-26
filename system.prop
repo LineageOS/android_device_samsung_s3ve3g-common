@@ -63,6 +63,7 @@ ro.lmk.use_minfree_levels=true
 ro.lmk.use_psi=false
 
 # Media
+debug.stagefright.ccodec=0
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 media.stagefright.enable-player=true
