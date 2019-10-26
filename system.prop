@@ -60,6 +60,7 @@ ro.lmk.log_stats=true
 ro.lmk.use_minfree_levels=true
 
 # Media
+debug.stagefright.ccodec=0
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 media.stagefright.enable-player=true
