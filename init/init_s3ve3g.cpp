@@ -35,8 +35,10 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
+#include <android-base/file.h>
 #include <android-base/logging.h>
 #include <android-base/properties.h>
+#include <android-base/strings.h>
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
@@ -45,26 +47,31 @@
 #include "vendor_init.h"
 
 using android::base::GetProperty;
+using android::base::ReadFileToString;
+using android::base::Trim;
 using android::init::property_set;
 
-void property_override(char const prop[], char const value[])
-{
-    prop_info *pi;
+// copied from build/tools/releasetools/ota_from_target_files.py
+// but with "." at the end and empty entry
+std::vector<std::string> ro_product_props_default_source_order = {
+    ".",
+    "product.",
+    "product_services.",
+    "odm.",
+    "vendor.",
+    "system.",
+};
 
-    pi = (prop_info*) __system_property_find(prop);
-    if (pi)
+void property_override(char const prop[], char const value[], bool add = true)
+{
+    auto pi = (prop_info *) __system_property_find(prop);
+
+    if (pi != nullptr) {
         __system_property_update(pi, value, strlen(value));
-    else
+    } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
+    }
 }
-
-void property_override_dual(char const system_prop[],
-        char const vendor_prop[], char const value[])
-{
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
-}
-
 
 void gsm_properties()
 {
@@ -77,26 +84,36 @@ void vendor_load_properties()
 
     std::string bootloader = GetProperty("ro.bootloader", "");
 
+    const auto set_ro_product_prop = [](const std::string &source,
+            const std::string &prop, const std::string &value) {
+        auto prop_name = "ro.product." + source + prop;
+        property_override(prop_name.c_str(), value.c_str(), false);
+    };
+
     if (bootloader.find("I9301I") == 0) {
         /* s3ve3gxx */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/s3ve3gxx/s3ve3g:4.4.2/KOT49H/I9301IXXUANL1:user/release-keys");
-        property_override("ro.build.description", "s3ve3gxx-user 4.4.2 KOT49H I9301IXXUANL1 release-keys");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "GT-I9301I");
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "s3ve3g");
+        for (const auto &source : ro_product_props_default_source_order) {
+            set_ro_product_prop(source, "fingerprint", "samsung/s3ve3gxx/s3ve3g:4.4.2/KOT49H/I9301IXXUANL1:user/release-keys");
+            set_ro_product_prop(source, "model", "GT-I9301I");
+            set_ro_product_prop(source, "device", "s3ve3g");
+        }
         gsm_properties();
     } else if (bootloader.find("I9301Q") == 0) {
         /* s3ve3gjv */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/s3ve3gjv/s3ve3g:4.4.2/KOT49H/I9301QXXUANH1:user/release-keys");
-        property_override("ro.build.description", "s3ve3gjv-user 4.4.2 KOT49H I9301QXXUANH1 release-keys");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "GT-I9301Q");
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "s3ve3gjv");
+        for (const auto &source : ro_product_props_default_source_order) {
+            set_ro_product_prop(source, "fingerprint", "samsung/s3ve3gjv/s3ve3g:4.4.2/KOT49H/I9301IXXUANH1:user/release-keys");
+            set_ro_product_prop(source, "model", "GT-I9301Q");
+            set_ro_product_prop(source, "device", "s3ve3gjv");
+        }
         gsm_properties();
     } else if (bootloader.find("I9300I") == 0) {
         /* s3ve3gdsds */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/s3ve3gdsxx/s3ve3gds:4.4.4/KTU84P/I9300IXWUBNJ1:user/release-keys");
+        for (const auto &source : ro_product_props_default_source_order) {
+            set_ro_product_prop(source, "fingerprint", "samsung/s3ve3gdsxx/s3ve3gds:4.4.2/KOT49H/I9300IXWUBNJ1:user/release-keys");
+            set_ro_product_prop(source, "model", "GT-I9300I");
+            set_ro_product_prop(source, "device", "s3ve3gds");
+        }
         property_override("ro.build.description", "s3ve3gdsxx-user 4.4.4 KTU84P I9300IXWUBNJ1 release-keys");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "GT-I9300I");
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "s3ve3gds");
         gsm_properties();
     } else {
         gsm_properties();
