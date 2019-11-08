@@ -21,7 +21,7 @@ COMMON_PATH := device/samsung/s3ve3g-common
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := s3ve3g,s3ve3gds,s3ve3gjv
+TARGET_OTA_ASSERT_DEVICE := s3ve3g,s3ve3gds,s3ve3gjv,s3ve3gxx
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
