@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from common msm8226
--include device/samsung/msm8226-common/BoardConfigCommon.mk
+include device/samsung/msm8226-common/BoardConfigCommon.mk
 
 COMMON_PATH := device/samsung/s3ve3g-common
 
