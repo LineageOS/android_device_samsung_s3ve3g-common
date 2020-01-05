@@ -74,6 +74,7 @@ ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
 
 # Media
+debug.stagefright.ccodec=0
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 media.stagefright.enable-player=true
