@@ -69,8 +69,8 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/hw/rild=27
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8226
-TARGET_LIBINIT_MSM8226_DEFINES_FILE := $(COMMON_PATH)/init/init_s3ve3g.cpp
+TARGET_INIT_VENDOR_LIB := libinit_s3ve3g
+TARGET_RECOVERY_DEVICE_MODULES := libinit_s3ve3g
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
