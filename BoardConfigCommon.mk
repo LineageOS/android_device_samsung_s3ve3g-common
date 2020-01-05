@@ -104,9 +104,6 @@ include $(COMMON_PATH)/sepolicy/sepolicy.mk
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
-# Shipping API Level
-PRODUCT_SHIPPING_API_LEVEL := 18
-
 # TWRP Support - Optional
 ifeq ($(WITH_TWRP),true)
 -include $(COMMON_PATH)/twrp.mk
