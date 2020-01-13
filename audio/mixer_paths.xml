@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <mixer>
-	<!-- GT-I9301I_EUR_XX (s3ve3g) ======================================= -->
+	<!-- S3VE3G_EUR -->
 	<!-- These are the initial mixer settings -->
 	<!-- reset RX part -->
 	<ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="0" />
@@ -697,7 +697,7 @@
 
 	<path name="speaker">
 		<path name="spk" />
-		<ctl name="RX4 Digital Volume" value="80" />
+		<ctl name="RX4 Digital Volume" value="83" />
 		<ctl name="SPK DRV Volume" value="7" />
 		<ctl name="COMP0 Switch" value="0" />
 	</path>
@@ -972,13 +972,13 @@
 
 	<path name="voice-call-speaker">
 		<path name="spk" />
-		<ctl name="RX4 Digital Volume" value="87" />
+		<ctl name="RX4 Digital Volume" value="90" />
 		<ctl name="SPK DRV Volume" value="8" />
 	</path>
 
 	<path name="voice-call-speaker-extra-vol">
 		<path name="spk" />
-		<ctl name="RX4 Digital Volume" value="87" />
+		<ctl name="RX4 Digital Volume" value="90" />
 		<ctl name="SPK DRV Volume" value="8" />
 	</path>
 
