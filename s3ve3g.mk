@@ -110,6 +110,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
 
+# Tethering
+PRODUCT_PACKAGES += \
+    WifiOverlay
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/s3ve3g-common/s3ve3g-common-vendor.mk)
 
