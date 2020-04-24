@@ -6,7 +6,7 @@ vendor/lib/libsensor1.so
 # Audio
 lib/libcsd-client.so:vendor/lib/libcsd-client.so
 
-# Audio - Libs pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+# Audio - Libs pinned to Samsung Galaxy S5 G900FXXU1CSA1_G900FVIA1CSC1_VIA
 vendor/lib/libacdbloader.so|27ceba70917afc0e9b26877354c8404dae5af09c
 vendor/lib/libacdbrtac.so|f1a150ccd4bf0b5a2957532ec2690b52124d006d
 vendor/lib/libadiertac.so|e29a874dc3e6622fda4fc76032a7ea5dc44eb228
@@ -112,13 +112,13 @@ etc/firmware/cpp_firmware_v1_2_0.fw
 cameradata/datapattern_420sp.yuv
 cameradata/datapattern_front_420sp.yuv
 
-# CPU - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+# CPU - Pinned to Samsung Galaxy S5 G900FXXU1CSA1_G900FVIA1CSC1_VIA
 bin/mpdecision:vendor/bin/mpdecision|f2f62bee58d83a16f649ad63d0520de30bca0d7f
 vendor/bin/thermal-engine|fb82c53fa2f9c7618a6540de61b4477ac54523a3
 vendor/lib/libthermalclient.so|e1f2136608a7104016f7f7261dddcfbb0c6aa870
 vendor/lib/libthermalioctl.so|9c7993e03f68bb17dd744c0369b9bfaff23a1e66
 
-# DRM - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU where specified
+# DRM - Pinned to Samsung Galaxy S5 G900FXXU1CSA1_G900FVIA1CSC1_VIA where specified
 bin/qseecomd:vendor/bin/qseecomd|4a69e9799a988d5527e8802470a0a036cb0b120f
 vendor/lib/libdrmdiag.so|498085e4fc40eacee17bb9c78eaf2da060ecc58e
 vendor/lib/libdrmfs.so|6f50f22ae12695c2bb29f5c6c2c00029e78b0c12
@@ -133,11 +133,11 @@ lib/libdrmdecrypt.so:vendor/lib/libdrmdecrypt.so|a79248704d988a8e1930c3a79212e85
 # FM Radio - From lineage-14.1-20180822-s3ve3g
 lib/libfmjni.so|5853a32bc9af140f469c2ce647c0db704b8e4482
 
-# IPC router security - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+# IPC router security - Pinned to Samsung Galaxy S5 G900FXXU1CSA1_G900FVIA1CSC1_VIA
 bin/irsc_util:vendor/bin/irsc_util|286b8129b6b82fb19badcbb5f796013a5e9376a1
 etc/sec_config:vendor/etc/sec_config
 
-# IPv6 Tethering - Pinned to Samsung Galaxy S5 G900FXXU1CRH1_G900FOXA1CRH1_BTU
+# IPv6 Tethering - Pinned to Samsung Galaxy S5 G900FXXU1CSA1_G900FVIA1CSC1_VIA
 bin/radish:vendor/bin/radish|5c54cb3d5c3472b6bb8f535817eeb55852b34ef0
 
 # Media - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
