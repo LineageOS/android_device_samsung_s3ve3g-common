@@ -200,7 +200,4 @@ lib/hw/sensors.msm8226.so:vendor/lib/hw/sensors.vendor.msm8226.so
 lib/libyasalgo.so:vendor/lib/libyasalgo.so
 
 # Time services
--app/TimeService/TimeService.apk|a1c0da0af9f3c3757a8fe04520011e2137def584
-bin/time_daemon:vendor/bin/time_daemon|b55e8b7aa5e1a4ad71976da6a607762f8762585a
-vendor/lib/libTimeService.so|aa3036dee5a6c74b9d32a93ab13cf1ec04aa99c4
 -vendor/lib/libtime_genoff.so|ffb08547c733760c151b08977a04694b4bc84df1
