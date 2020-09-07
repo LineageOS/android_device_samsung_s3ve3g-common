@@ -201,6 +201,3 @@ vendor/lib/libdsucsd.so|1f739bcb91330edb307329f851f031d56723672f
 # Sensors
 lib/hw/sensors.msm8226.so:vendor/lib/hw/sensors.vendor.msm8226.so
 lib/libyasalgo.so:vendor/lib/libyasalgo.so
-
-# Time services
--vendor/lib/libtime_genoff.so|ffb08547c733760c151b08977a04694b4bc84df1
