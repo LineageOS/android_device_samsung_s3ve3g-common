@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from common msm8226
--include device/samsung/msm8226-common/BoardConfigCommon.mk
+include device/samsung/msm8226-common/BoardConfigCommon.mk
 
 COMMON_PATH := device/samsung/s3ve3g-common
 
@@ -37,9 +37,6 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8226
 # Build
 BLOCK_BASED_OTA := true
 
-# Extended Filesystem Support
-TARGET_EXFAT_DRIVER := sdfat
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
@@ -49,7 +46,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 zcache.enabled=1 zcache.compressor=lz4 maxcpus=1
+BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x37 zcache.enabled=1 zcache.compressor=lz4 maxcpus=1
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
