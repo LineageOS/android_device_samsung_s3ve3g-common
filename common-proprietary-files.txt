@@ -130,9 +130,6 @@ vendor/lib/libssd.so|f7216c09cd17a94fb946179503cd286262be9de8
 # DRM - Pinned to S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
 lib/libdrmdecrypt.so:vendor/lib/libdrmdecrypt.so|a79248704d988a8e1930c3a79212e8588c07bfff
 
-# FM Radio - From lineage-14.1-20180822-s3ve3g
-lib/libfmjni.so|5853a32bc9af140f469c2ce647c0db704b8e4482
-
 # IPC router security - Pinned to Samsung Galaxy S5 G900FXXU1CSA1_G900FVIA1CSC1_VIA
 bin/irsc_util:vendor/bin/irsc_util|286b8129b6b82fb19badcbb5f796013a5e9376a1
 etc/sec_config:vendor/etc/sec_config
