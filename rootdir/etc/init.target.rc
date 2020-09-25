@@ -92,3 +92,7 @@ on boot
     chown system system /efs/gyro_cal_data
     chmod 0640 /efs/gyro_cal_data
     restorecon /efs/gyro_cal_data
+
+on post-fs-data
+    mkdir /data/misc/fm 0770 system system
+    chmod 0770 /data/misc/fm
