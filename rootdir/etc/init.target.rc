@@ -42,6 +42,9 @@ on post-fs-data
     chown system camera /sys/class/leds/led:flash_torch/brightness 
     
 on boot
+    chown system system /sys/module/radio_iris_transport/parameters/fmsmd_set
+    chmod 0660 /sys/module/radio_iris_transport/parameters/fmsmd_set
+
     # NFC_NXP
     symlink /dev/pn547 /dev/pn544
     symlink /dev/pn547 /dev/pn54x
@@ -92,3 +95,15 @@ on boot
     chown system system /efs/gyro_cal_data
     chmod 0640 /efs/gyro_cal_data
     restorecon /efs/gyro_cal_data
+
+on post-fs-data
+    mkdir /data/misc/fm 0770 system system
+    chmod 0770 /data/misc/fm
+
+service vendor.fm /vendor/bin/init.qcom.fm.sh
+    class late_start
+    user system
+    group system
+    disabled
+    oneshot
+    seclabel u:r:fm_dl:s0
