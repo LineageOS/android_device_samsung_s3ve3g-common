@@ -49,7 +49,8 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio
+    FMRadio \
+    init.qcom.fm.sh
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \

@@ -92,3 +92,11 @@ on boot
     chown system system /efs/gyro_cal_data
     chmod 0640 /efs/gyro_cal_data
     restorecon /efs/gyro_cal_data
+
+service vendor.fm /vendor/bin/init.qcom.fm.sh
+    class late_start
+    user system
+    group system
+    disabled
+    oneshot
+    seclabel u:r:fm_dl:s0
