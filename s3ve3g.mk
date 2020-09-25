@@ -47,9 +47,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FlipFlap
 
-# FM
+# FM radio
 PRODUCT_PACKAGES += \
-    FMRadio
+    android.hardware.broadcastradio@1.0-impl \
+    FM2 \
+    qcom.fmradio \
+    init.qcom.fm.sh
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
