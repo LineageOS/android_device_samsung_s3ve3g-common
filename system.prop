@@ -47,12 +47,6 @@ ro.hdmi.enable=true
 # HWUI
 debug.hwui.use_buffer_age=false
 
-# LMKd
-ro.lmk.kill_heaviest_task=true
-ro.lmk.kill_timeout_ms=100
-ro.lmk.log_stats=true
-ro.lmk.use_minfree_levels=true
-
 # Media
 debug.stagefright.ccodec=0
 debug.stagefright.omx_default_rank.sw-audio=1
