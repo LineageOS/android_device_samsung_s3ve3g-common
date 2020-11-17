@@ -25,9 +25,5 @@
             <name>IAdaptiveBacklight</name>
             <instance>default</instance>
         </interface>
-        <interface>
-            <name>IDisplayColorCalibration</name>
-            <instance>default</instance>
-        </interface>
-    </hal>    
+    </hal>
 </manifest>
