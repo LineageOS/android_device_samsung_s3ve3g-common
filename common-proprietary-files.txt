@@ -152,48 +152,34 @@ vendor/lib/libqti-perfd-client.so|909e0a3d1b7a86030f58b165d5f761fc50183ff0
 # Qualcomm - Pinned to Samsung Galaxy S5 G900FXXS1BPCL_G900FOXA1BOJ1_BTU
 vendor/lib/libxml.so|251560fdf50b82c15f481bfc6cf12235c42e19c9
 
-# Qualcomm Framework
-vendor/lib/libqmi_csvt_srvc.so
-vendor/lib/libqmi_client_helper.so
+# Qualcomm Framework - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
+lib/libmdmdetect.so:vendor/lib/libmdmdetect.so|e5d6994a2bfab72e55d48911e69e856ff804266a
+vendor/lib/libconfigdb.so|b833c67294b90af93d0ed7c4945ae0286970a957
+vendor/lib/libdiag.so|361ef99bcf63c7a6a2db6f51aa62beb019fb207a
+vendor/lib/libdsutils.so|1da55f6782855f8e914688213350401e43d20c31
+vendor/lib/libidl.so|36c9957ea258affe5523a7c88a4dda9647be8a28
+vendor/lib/libnetmgr.so|c922e27e0141edc358bd4a1d3bac98d97e66849e
+vendor/lib/libperipheral_client.so|6db947cce57cf6abd440581113563d60ec29086c
+vendor/lib/libqcci_legacy.so|07a6cc82f36b5271b61b823c6230e04d622692ed
+vendor/lib/libqmi.so|2d4478b793b08bc41ad5598df74db42ce4a53868
+vendor/lib/libqmi_cci.so|a0e5d1c638d1535a752997b9741f25556f3dac64
+vendor/lib/libqmi_client_helper.so|8e2825a5e5cb5edc76ac5d1eec59f94795dd75b8
+vendor/lib/libqmi_client_qmux.so|06762650b756ba9e4952fe6b44b0db892cc5ac3b
+vendor/lib/libqmi_common_so.so|3897273e86aa97f48a746fd99842b9c9c7911156
+vendor/lib/libqmi_csi.so|538b67bf4ddff038ec166f58aa17280d4d0a53d6
+vendor/lib/libqmi_encdec.so|cb34e91bddb631a1e0761210be9022004349b37e
+vendor/lib/libqmiservices.so|7c9983e79c1bca269069ef6dc0a5e549d4009ad4
 
-# Qualcomm Framework - Pinned to Samsung Galaxy S5 G900FXXS1BPCL_G900FOXA1BOJ1_BTU
-lib/libmdmdetect.so:vendor/lib/libmdmdetect.so|9c19d5aacc094597c166529386f83ac721ac1979
-lib/libperipheral_client.so:vendor/lib/libperipheral_client.so|7107a8e656fabc5ff6b7a33740be80a1add6abbd
-vendor/lib/libconfigdb.so|a7eedfbb0ffa070c9239f0d293262e268342da1d
-vendor/lib/libdiag.so|2dd30d2de57567aa4575f98e4679cdbd625bbbe6
+# Qualcomm Framework - Pinned to G900FXXS1BPCL_G900FOXA1BOJ1_BTU
 vendor/lib/libdsi_netctrl.so|d5d25fd5b1ea250bdfcb64059eafaf609fe2e32c
-vendor/lib/libdsutils.so|99fac25d6a10ea89a7f66cfc7c3a36478a178568
-vendor/lib/libidl.so|9b871bda84a1204b35b5a93311d666aa36a7f8b8
-vendor/lib/libnetmgr.so|fc8dcd60b4fd28518e03949842dd6b496712c2d1
-vendor/lib/libqcci_legacy.so|5f0f25a72677d0b3183031490e45b6de26735327
 vendor/lib/libqdi.so|6bd79ba4dc4b4af654cda666e829312ba07a22e9
-vendor/lib/libqmi.so|d120b126ba94cb2d4164243ef7a8516168b6fedf
-vendor/lib/libqmi_cci.so|b94c84c54183e538a7802ca531da7cf2b8176614
-vendor/lib/libqmi_client_qmux.so|79cb7b305bd9f87c581f26c805f4ca2bbdf3a069
-vendor/lib/libqmi_common_so.so|6c70d0c23898f4d5aa5a962736a06aa3d21e7aa6
-vendor/lib/libqmi_csi.so|dee249a1f0fff082b5e5547cfab103ac10ab55e2
-vendor/lib/libqmi_encdec.so|82e39ae7e4bb8651d06fdae99fc38e3fb390b62d
-vendor/lib/libqmiservices.so|0b90d67d7ec0b0bc3de2b5ccc3afcda13bd5ffd8
 
-# Radio
-lib/libatparser.so:vendor/lib/libatparser.so
-lib/libcordon.so:vendor/lib/libcordon.so
-lib/libfactoryutil.so:vendor/lib/libfactoryutil.so
-lib/libomission_avoidance.so:vendor/lib/libomission_avoidance.so
-
-# Radio - Pinned to G900FXXS1BPCL_G900FOXA1BOJ1_BTU
-bin/efsks:vendor/bin/efsks|2c366ac7ab878068c77e5598c411a48cf47b056a
-bin/ks:vendor/bin/ks|949406ae5d1b74034b3828af1905a181e4b69961
-bin/qcks:vendor/bin/qcks|9026c84f32e1ee5121024c72b878c09dfde95e5b
-bin/qmuxd:vendor/bin/qmuxd|e257d63996812e2eb23810bda59913f558ee03d2
-bin/rfs_access:vendor/bin/rfs_access|49a8516ed01b609a9e5079d8135b75db5b024236
-bin/rmt_storage:vendor/bin/rmt_storage|000ddcabfc9416e9a27ba6d04860cc14b6803cdd
-vendor/lib/libril-qcril-hook-oem.so|6a73ed46f4fbcb283eea5fb44b24a7d14522bfe5
-
-# Radio - Pinned to S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
-bin/ds_fmc_appd:vendor/bin/ds_fmc_appd|80eb4cd64d23a82a9a8c2aeafa9128d5e8158bdd
-vendor/lib/libdsnetutils.so|bf7097980412a364c941aefcadfbe89066fdecf1
-vendor/lib/libdsucsd.so|1f739bcb91330edb307329f851f031d56723672f
+# Radio - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
+bin/qmuxd:vendor/bin/qmuxd|cfc4752ad51a706f0b7a26dd78c1c2da74a0ea64
+bin/rfs_access:vendor/bin/rfs_access|1ec2c9f2d81a1fdc6f676ed0ca882bd80aecad4a
+bin/rmt_storage:vendor/bin/rmt_storage|37e230681465c787ff48ef431f94fcf31b3afbf3
+lib/libprotobuf-cpp-full.so:vendor/lib/libprotobuf-cpp-full-v23.so|b16f9545bd719238d2eb9badcbd4391013b7af5a
+vendor/lib/libril-qcril-hook-oem.so|e7157ae0f219a9060f7a559565122a3db763f2b2
 
 # Sensors
 lib/hw/sensors.msm8226.so:vendor/lib/hw/sensors.vendor.msm8226.so
