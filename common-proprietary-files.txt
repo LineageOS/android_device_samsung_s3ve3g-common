@@ -11,16 +11,16 @@ vendor/lib/libacdbloader.so|27ceba70917afc0e9b26877354c8404dae5af09c
 vendor/lib/libacdbrtac.so|f1a150ccd4bf0b5a2957532ec2690b52124d006d
 vendor/lib/libadiertac.so|e29a874dc3e6622fda4fc76032a7ea5dc44eb228
 vendor/lib/libaudcal.so|fa2bbd6df7818c787e472791d69fd6c4db184f7b
-etc/acdbdata/Bluetooth_cal.acdb::vendor/etc/acdbdata/Bluetooth_cal.acdb
-etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/General_cal.acdb
-etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/Global_cal.acdb
-etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/Handset_cal.acdb
-etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/Hdmi_cal.acdb
-etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb
-etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb
+etc/acdbdata/Bluetooth_cal.acdb::vendor/etc/acdbdata/Bluetooth_cal.acdb|caff3ad27e72217ab847676091ef6ee587d29a22
+etc/acdbdata/General_cal.acdb:vendor/etc/acdbdata/General_cal.acdb|8042a8bb90aa2a7f31bbeb75a7b361f1f10fb9d3
+etc/acdbdata/Global_cal.acdb:vendor/etc/acdbdata/Global_cal.acdb|fcf49a61c9a86bfa978abffbe87b8a3686f72d1d
+etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/Handset_cal.acdb|a7a56ead9b5b782de216696a9b1da1b54bbff52b
+etc/acdbdata/Hdmi_cal.acdb:vendor/etc/acdbdata/Hdmi_cal.acdb|38ccfcea94011de44ae25a0a7f598f4842941ea6
+etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/Headset_cal.acdb|f833be6fcca75253f16a3e0f66c1a45870d933ef
+etc/acdbdata/Speaker_cal.acdb:vendor/etc/acdbdata/Speaker_cal.acdb|edb3dc8edafaa876b6da53832205418118432cf2
 vendor/lib/soundfx/libqcbassboost.so|0d47c9255f0fb0865ed7b14d83cddd79ad3bde0c
-vendor/lib/soundfx/libqcvirt.so|9643ef67b86700b78ea26f54e29808ea814bde40
-vendor/lib/soundfx/libqcreverb.so|1819566d8c69bb8f562cf4b0422db67f9c8393af
+vendor/lib/soundfx/libqcvirt.so|1819566d8c69bb8f562cf4b0422db67f9c8393af
+vendor/lib/soundfx/libqcreverb.so|9643ef67b86700b78ea26f54e29808ea814bde40
 
 # ADSP - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
 bin/adsprpcd:vendor/bin/adsprpcd|794cbef158698b05016cd911055d2e35b8156616
@@ -30,11 +30,11 @@ vendor/lib/libfastcvopt.so|17398d7d04b12680d81aeae3f93bb899b71ee1aa
 vendor/lib/libscve.so|2ece882804e158db562bb5c1532e1a83848849b7
 vendor/lib/libscve_stub.so|a96edc3e7b1854d1bf678c8a64df02eb318b6dbc
 vendor/lib/rfsa/adsp/libadsp_denoise_skel.so|67952d7ef062bfd1de626573a443c210af125db1
-vendor/lib/rfsa/adsp/libapps_mem_heap.so|67952d7ef062bfd1de626573a443c210af125db1
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|d85cb9db118b62236592b07c6340256292720ca7
 vendor/lib/rfsa/adsp/libdspCV_skel.so|095fe6656baebbfc12046f322aeb94c210b018e8
 vendor/lib/rfsa/adsp/libfastcvadsp.so|a1fad41c2f283b49ae85986c013ee1179ad80e91
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|9eb9499087e8cbd87aef57b25eb306a3ea481524
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|9eb9499087e8cbd87aef57b25eb306a3ea481524
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|f1170bbc1b25d7bc65551ebe991fb9743531c997
 
 # Bluetooth - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
 bin/btnvtool:vendor/bin/btnvtool|3b518f5626d211930c0d63e4b2680797c6c7a4d5
@@ -132,7 +132,7 @@ lib/libdrmdecrypt.so:vendor/lib/libdrmdecrypt.so|a79248704d988a8e1930c3a79212e85
 
 # IPC router security - Pinned to Samsung Galaxy S5 G900FXXU1CSA1_G900FVIA1CSC1_VIA
 bin/irsc_util:vendor/bin/irsc_util|286b8129b6b82fb19badcbb5f796013a5e9376a1
-etc/sec_config:vendor/etc/sec_config
+etc/sec_config:vendor/etc/sec_config|aed3e85a45d45daf7641a0b72f920e7004c81ed9
 
 # IPv6 Tethering - Pinned to Samsung Galaxy S5 G900FXXU1CSA1_G900FVIA1CSC1_VIA
 bin/radish:vendor/bin/radish|5c54cb3d5c3472b6bb8f535817eeb55852b34ef0
@@ -146,7 +146,7 @@ vendor/lib/libOmxWmaDec.so|1b96f549a54660218c1459cf7133d2a5632ca657
 vendor/lib/libmmosal.so|20af45456f1f588cc97e5278b3d273c8070eab2a
 
 # Perf - Pinned to Samsung Galaxy S5 Mini G800HXXU1CRJ1_G800HXEO1CRJ1
-vendor/lib/libqc-opt.so|86b2577d54bafa497601ff6b6c4159b210e55fae
+vendor/lib/libqc-opt.so|909e0a3d1b7a86030f58b165d5f761fc50183ff0
 vendor/lib/libqti-perfd-client.so|909e0a3d1b7a86030f58b165d5f761fc50183ff0
 
 # Qualcomm - Pinned to Samsung Galaxy S5 G900FXXS1BPCL_G900FOXA1BOJ1_BTU
