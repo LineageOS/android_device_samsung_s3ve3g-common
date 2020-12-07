@@ -82,10 +82,10 @@ vendor/lib/libqomx_core.so|586a1a199c012c5ee58096bcb786251041a5adb3
 vendor/lib/libHevcSwDecoder.so|ed6237ce5b3550a6ab677c0fdf76d9ea57e51221
 vendor/lib/libOmxMux.so|5241c2f63bd999602665b54b181c03950a2cc3f6
 
-# Camera - Pinned to Samsun Galaxy Grand 2
+# Camera - Pinned to Samsun Galaxy Grand 2 G7102DDSBQF1_G7102ODDBOB1
 lib/hw/camera.msm8226.so:vendor/lib/hw/camera.vendor.msm8226.so|23ed6e7347d1ee322364fceb6aa8a09ea515c90a
 
-# Front Camera - Pinned to Samsun Galaxy Grand 2
+# Front Camera - Pinned to Samsun Galaxy Grand 2 G7102DDSBQF1_G7102ODDBOB1
 vendor/lib/libmmcamera_s5k6a3yx.so|ff734c7de4acbb89dd70218c312a0eb93d57be54
 
 # Camera Chromatix
