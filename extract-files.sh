@@ -57,7 +57,7 @@ COMMON_BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE_COMMON}/proprietary"
 # Reinitialize the helper for device
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}"
 
-for BLOB_LIST in "${MY_DIR}/../${DEVICE}/device-proprietary-files*.txt"; do
+for BLOB_LIST in "${MY_DIR}/../${DEVICE}/device-proprietary-files.txt"; do
     extract "${BLOB_LIST}" "${SRC}"
 done
 
