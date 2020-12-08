@@ -15,16 +15,12 @@
 #
 
 # NFC
+$(call inherit-product, device/samsung/s3ve3g-common/nfc/product.mk)
+
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    NfcNci \
-    Tag
+    libpn547_fw \
+    nfc_nci.pn54x.default
 
 PRODUCT_COPY_FILES += \
-    device/samsung/s3ve3g/nfc/nfcee_access.xml:system/etc/nfcee_access.xml
-
-# NFC Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml
+    device/samsung/s3ve3g-common/nfc/pn547/libnfc-nci.conf:system/etc/libnfc-nci.conf \
+    device/samsung/s3ve3g-common/nfc/pn547/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
