@@ -15,4 +15,7 @@
 #
 
 # NFC
-DEVICE_MANIFEST_FILE += device/samsung/s3ve3g/nfc/manifest.xml
+include device/samsung/s3ve3g-common/nfc/board.mk
+
+# PN547 specific flags
+BOARD_NFC_CHIPSET := pn547
