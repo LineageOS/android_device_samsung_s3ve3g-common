@@ -93,6 +93,9 @@ ro.data.large_tcp_window_size=true
 # Ril sends only one RIL_UNSOL_CALL_RING, so set call_ring.multiple to false
 ro.telephony.call_ring.multiple=0
 
+# Recovery
+persist.vendor.recovery_update=false
+
 # Sensors
 ro.qc.sdk.gestures.camera=false
 ro.qc.sdk.camera.facialproc=false
