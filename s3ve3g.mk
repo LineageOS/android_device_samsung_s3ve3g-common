@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2014-2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2018,2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/s3ve3g-common/s3ve3g-common-vendor.mk)
+$(call inherit-product, vendor/samsung/s3ve3g-common/s3ve3g-common-vendor.mk)
 
 # common msm8226
 $(call inherit-product, device/samsung/msm8226-common/msm8226.mk)

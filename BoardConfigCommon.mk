@@ -1,5 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017,2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -101,4 +101,4 @@ include $(COMMON_PATH)/sepolicy/sepolicy.mk
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # inherit from the proprietary version
--include vendor/samsung/s3ve3g-common/BoardConfigVendor.mk
+include vendor/samsung/s3ve3g-common/BoardConfigVendor.mk
