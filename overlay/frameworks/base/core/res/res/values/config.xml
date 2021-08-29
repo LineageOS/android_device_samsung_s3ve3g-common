@@ -2,7 +2,7 @@
 <!--
 /*
 ** Copyright 2011, The Android Open Source Project
-** Copyright 2017-2019, The LineageOS Project
+** Copyright 2017, The LineageOS Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -209,6 +209,8 @@
         policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
     -->
     <integer name="config_longPressOnHomeBehavior">2</integer>
+
+    <bool name="config_enableWifiDisplay">true</bool>
 
     <string-array name="config_mobile_tcp_buffers">
         <item>lte:2097152,4194304,8388608,262144,524288,1048576</item>
